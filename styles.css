@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#user-container, #post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    margin: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.section {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.section i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.section p {
+    margin: 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.section strong {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.section:nth-child(odd) {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.section:nth-child(even) {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+a.view-posts {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.view-posts:hover {
+    text-decoration: underline;
+}
